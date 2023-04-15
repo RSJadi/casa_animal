@@ -1,0 +1,138 @@
+* {
+
+}
+
+header {
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 120px;
+} 
+
+header img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10%;
+    margin-left: 30px;  
+}
+
+header img:hover {
+    display: flex;
+    scale: 1.1;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 320px;
+}
+
+header ul li {
+    margin-left: 100px;
+    font-size: larger;
+}
+
+
+header ul li:hover {
+    scale: 1.2;
+    font-weight: bold;
+    cursor: url(./assets/pata-cachorro-cursor.cur), auto;
+
+}
+
+
+body {
+    font-family: 'Irish Grover', cursive;
+    color: #016B38;
+    background-color: #B88D79;   
+    background-image: url(./assets/fundo_Adote.png);
+
+}
+
+
+.Por_que_adotar {
+    background-color: rgb(185, 141, 121, 0.3);
+
+    margin: 10px;
+    padding: 10px;
+    margin-left: 350px;
+    display: flex;
+    justify-content: space-between;
+    height: 360px;
+}
+
+.Por_que_adotar img{
+    width: 210%;
+    height: auto;
+    object-fit: contain;
+    padding-top: 7px;
+}
+
+.Textos_adotar {
+    padding-left: 200px;
+    padding-right: 20px;
+}
+
+.Titulo_adotar {
+    text-align: center;
+    align-content: center;
+    letter-spacing: 3px;
+}
+
+.Justif_adotar1 {
+    text-align: left;
+    align-content: center;
+    line-height: 200%;   
+    letter-spacing: 2px;
+    padding-right: 10px;
+
+}
+
+.Justif_adotar2 {
+    text-align: right;
+    align-content: center;   
+    padding-left: 70px;
+    padding-right: 5px;
+    line-height: 200%;   
+    letter-spacing: 2px;
+}
+
+
+h1 {
+    text-align: center;
+    -webkit-text-stroke: 0.5px black;
+    font-weight: bold;
+    font-size: 200%;
+    letter-spacing: 8px;
+}
+
+h2 {
+
+    color: #D9D9D9;
+
+    font-weight: bold;
+    font-size: 200%;
+}
+
+h3 {
+
+    -webkit-text-stroke: 0.5px black;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+
+main {
+
+
+}
+
+.novo_amigo {
+    font-family: 'Inter', sans-serif;
+}

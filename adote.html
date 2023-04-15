@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Irish+Grover&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Adote!</title>
 </head>
-<body leftmargin="30px" text="016B38" bgcolor="B88D79">
+<body>
     <header>
-        <img width="20%" src="./assets/logo_atual.png" alt="Logotipo Casa Animal">
+        <img src="./assets/logo_atual.png" alt="Logotipo Casa Animal">
         <ul>
             <li>PRODUTOS</li>
             <li>ADOTE!</li>
@@ -17,37 +21,56 @@
         </ul>
     </header>
     <main>
-        <center><h1>POR QUE ADOTAR?</h1></center>
+        <h1>POR QUE ADOTAR?</h1>
         <section>
-            <center>
-                <img width="40%"src="./assets/vira-latas caramelo.jpg" alt="Vra-latas caramelo">
-                <h2>Você sabia que...?</h2>
-                <h3>A quantidade de animais de rua e em situações de vulnerabilidade no Brasil infelizmente é gigantesca, o que tem tornado exaustivo o trabalho de ONGs e protetores independentes.</h3>
-                <h3>Quando você adota um animal, além de ganhar um amigo fiel e companheiro, permitirá que um novo bichinho seja resgatado e também possa ser feliz.</h3>
-            </center>          
+                <div class="Por_que_adotar">
+                    <div class="Imagem_adotar">
+                        <img src="./assets/vira_latas_caramelo_v2.jpg" alt="Vra-latas caramelo">
+                    </div>
+                    <div class="Textos_adotar">
+                        <div class="Titulo_adotar">
+                            <h2>Você sabia que...?</h2>
+                        </div>
+                        <div class="Justif_adotar1">                          
+                            <h3>A quantidade de animais de rua e em situações de vulnerabilidade no Brasil infelizmente é gigantesca, o que tem tornado exaustivo o trabalho de ONGs e protetores independentes.</h3>
+                        </div>
+                        <div class="Justif_adotar2">   
+                            <h3>Quando você adota um animal, além de ganhar um amigo fiel e companheiro, permitirá que um novo bichinho seja resgatado e também possa ser feliz.</h3>
+                        </div>
+                     </div>
+                 </div>
+    
         </section>
         <section>
             <h2>Dicas e sugestões</h2>
-            <a href="https://blog.liderdamatilha.com.br/importancia-passear-com-cachorro/" target="_blank">
-                <h3>Vamos passear?</h3>
-                <img width="25%" src="./assets/dog amor.jpg" alt="Dog passear">
-            </a>      
-            <a href="https://www.terra.com.br/vida-e-estilo/comportamento/calopsitas-e-caes-podem-conviver-em-harmonia-veja-dicas,f4ee3966b08e3410VgnVCM20000099cceb0aRCRD.html" target="_blank">
-                <h3>Muito diferentes: harmonia?</h3>   
-                <img width="25%" src="./assets/dog e calopsita.jpg" alt="Dog e calopsita">
-            </a>
-            <a href="https://www.uol.com.br/universa/noticias/redacao/2017/10/13/sexta-feira-13-e-dia-de-alerta-para-os-protetores-de-animais-veja-por-que.htm" target="_blank">
-                <h3>Por que tantas entrevistas na adoção?</h3>
-                <img width="25%"src="./assets/gato preto.jpg" alt="Gato preto">
-            </a>
+            <div>
+                <a href="https://blog.liderdamatilha.com.br/importancia-passear-com-cachorro/" target="_blank">
+                    <h3>Vamos passear?</h3>
+                    <img width="25%" src="./assets/dog amor.jpg" alt="Dog passear">
+                </a>
+            </div>
+            <div>
+                <a href="https://www.terra.com.br/vida-e-estilo/comportamento/calopsitas-e-caes-podem-conviver-em-harmonia-veja-dicas,f4ee3966b08e3410VgnVCM20000099cceb0aRCRD.html" target="_blank">
+                    <h3>Muito diferentes: harmonia?</h3>   
+                    <img width="25%" src="./assets/dog e calopsita.jpg" alt="Dog e calopsita">
+                </a>
+            </div>
+            <div>
+                <a href="https://www.uol.com.br/universa/noticias/redacao/2017/10/13/sexta-feira-13-e-dia-de-alerta-para-os-protetores-de-animais-veja-por-que.htm" target="_blank">
+                    <h3>Por que tantas entrevistas na adoção?</h3>
+                    <img width="25%"src="./assets/gato preto.jpg" alt="Gato preto">
+                </a>
+            </div>
         </section>
         <aside>
-            <form action="">
-                <h3>
-                    <label for="cep">Onde seu novo amigo lhe encontrará? Informe aqui seu CEP e mostraremos as entidades parceiras mais pertinho de você!</label>
-                    <input type="text" name="cep" id="cep">
-                </h3>
-            </form>
+            <div class="novo_amigo">
+                <form action="">
+                    <h3>
+                        <label for="cep">Onde seu novo amigo lhe encontrará? Informe aqui seu CEP e mostraremos as entidades parceiras mais pertinho de você!</label>
+                        <input type="text" name="cep" id="cep">
+                    </h3>
+                </form>
+            </div>
         </aside>
         <section>
             <h3>Permita que esse ciclo de felicidade continue! Seu novo amigo está lhe aguardando nas nossas entidades parceiras. Veja só alguns dos animais esperando um lar:</h3>
