@@ -1,13 +1,18 @@
-* {
-
+body {
+    font-family: 'Irish Grover', cursive;
+    color: #016B38;
+    background-color: #B88D79;   
+    background-image: url(./assets/fundo_Adote.png);
 }
 
 header {
     background-color: #D9D9D9;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-direction: row;
     padding: 0.625rem;
     height: 7.5rem;
+    width: auto;
 } 
 
 header img {
@@ -17,7 +22,7 @@ header img {
     height: auto;
     object-fit: contain;
     border-radius: 10%;
-    margin-left: 1.875rem;  
+    padding-left: 0rem;  
 }
 
 header img:hover {
@@ -35,52 +40,75 @@ header ul {
 
 header ul li {
     margin-left: 6.25rem;
-    font-size: larger;
+    font-size: 1.75rem;
 }
-
 
 header ul li:hover {
     scale: 1.2;
     font-weight: bold;
-    cursor: url(./assets/pata-cachorro-cursor.cur), auto;
+    cursor: url(./assets/pata-cachorro-cursor.cur), default;
+}
 
+main {
+    width: auto;
+    height: 62rem;
+    margin-bottom: 2.5rem;
+}
+
+.Main_title {
+    text-align: center;
+    -webkit-text-stroke: 0.031rem black;
+    font-weight: bold;
+    font-size: 3.5rem;
+    letter-spacing: 0.5rem;
+}
+
+.Novo_amigo {
+    margin: 0.625rem;
+    padding: 0.625rem;
+    width: 17.3%;
+    height: 23rem;
+    float: left; 
+    font-family: 'Inter', sans-serif;
+    -webkit-text-stroke: 0.031rem #016B38;
+    font-size: 100%;
+    font-weight: bold;   
+    text-align: center;
+    line-height: 3.5rem;
+    margin-bottom: 3rem;
+    background-color:#D9D9D9;
+    border-radius: 10%;
 }
 
 
-body {
-    font-family: 'Irish Grover', cursive;
-    color: #016B38;
-    background-color: #B88D79;   
-    background-image: url(./assets/fundo_Adote.png);
-
+.Adotar {
+    float: right;
+    height: 23rem;
+    width: 80%;   
+    margin-bottom: 3rem;
 }
-
 
 .Por_que_adotar {
     margin: 0.625rem;
     padding: 0.625rem;
-    margin-left: 21.875rem;
     display: flex;
     justify-content: space-between;
-    height: 22.5rem;
-    width: 70.75rem;
-
+    float: right;
 }
 
 .Por_que_adotar img{
-    width: 21.5rem;
+    width: 23rem;
     height: auto;
-    -webkit-box-shadow: -28px 0px 37px -2px rgba(66, 68, 90, 1);
-    -moz-box-shadow: -28px 0px 37px -2px rgba(66, 68, 90, 1);
-    box-shadow: -28px 0px 37px -2px rgba(66, 68, 90, 1);
+    -webkit-box-shadow: 0px 0px 43px 7px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 43px 7px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 43px 7px rgba(66, 68, 90, 1);
 }
 
 .Textos_adotar {
-    height: 22.5rem;
+    height: 23rem;
     width: 70.75;
     padding-left: 2rem;
     padding-right: 1rem;
-
 }
 
 .Titulo_adotar {
@@ -90,9 +118,10 @@ body {
 }
 
 .Titulo_adotar h2 {
-    color: #D9D9D9;
+    color:#016B38;
     font-weight: bold;
     font-size: 200%;
+    -webkit-text-stroke: 0.031rem #016B38;
 }
 
 .Justif_adotar1 {
@@ -124,34 +153,13 @@ body {
     font-size: 150%;
 }
 
-h1 {
-    text-align: center;
-    -webkit-text-stroke: 0.031rem black;
-    font-weight: bold;
-    font-size: 200%;
-    letter-spacing: 0.5rem;
-}
-
-h2 {
-    color: #D9D9D9;
-    font-weight: bold;
-    font-size: 200%;
-}
-
-h3 {
-
-    -webkit-text-stroke: 0.031rem black;
-    font-weight: bold;
-    font-size: 150%;
-}
-
 .Parceiras {
-
-    margin: 0.625rem;
-    padding: 0.625rem;
+    margin: 0.4rem;
+    padding: 0.4rem;
     width: 40rem;
     height: 24rem;
-
+    float: left;
+    clear: both;
 }
 
 .Parceiras_title {
@@ -173,10 +181,6 @@ h3 {
     width: 40rem;
     height: 10rem;
     gap: 0.625rem; 
-
-
-
-
 }
 
 .Parceiras_images img {
@@ -189,7 +193,6 @@ h3 {
 }
 
 .Parceiras_texts {
-
     flex-direction: row;
     justify-content: space-around;
     display: flex;
@@ -210,15 +213,106 @@ h3 {
     -webkit-text-stroke: 0.031rem black;
     font-weight: bold;
     font-size: 0.9rem;
+}
+
+.Dicas {
+    margin: 0.4rem;
+    padding: 0.4rem;
+    width: 48rem;
+    height: 24.5rem;
+    float: right;
+}
+
+.Titulo_Dicas {
+    text-align: left;
+    align-content: center;
+    padding-left: 0.5rem;
+    letter-spacing: 0.188rem;
+    -webkit-text-stroke: 0.031rem #016B38;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.Dicas_images {
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    height: 7.5rem;
+    gap: 0.625rem; 
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.Dicas_images img {
+    width: 14.5rem;
+    height: auto;
+    border-radius: 5%;
+    -webkit-box-shadow: 0px 0px 37px -2px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 37px -2px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 37px -2px rgba(66, 68, 90, 1);
+}
+
+.Dicas_texts {
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+    height: 6rem;
+    gap: 0.625rem;   
+    letter-spacing: 0.125rem;
+    padding-top: 0rem;
+}
+
+
+.Dicas a {
+    text-decoration: none;
+}
+
+.Dicas_txt {
+    width: 13rem;
+    text-align: center;
+    -webkit-text-stroke: 0.031rem #016B38;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+
+
+footer {
+    background-color: #D9D9D9;    
+    padding: 0.3rem;
+    height: 13.5rem;
+    width: auto;
     
-
 }
 
-main {
-
-
+footer img {
+    width: 5rem;
+    height: auto;
+    border-radius: 5%;
 }
 
-.novo_amigo {
-    font-family: 'Inter', sans-serif;
+.Foot_images {
+    justify-content: left;
+    flex-direction: row;
+    gap: 3rem;
+    display: flex;
+}
+
+
+footer h2 {
+    text-align: left;
+    align-content: center;
+    letter-spacing: 0.188rem;
+    -webkit-text-stroke: 0.031rem #016B38;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+footer h4 {
+    text-align: right;
+    align-content: center;
+    letter-spacing: 0.188rem;
+    -webkit-text-stroke: 0.031rem #016B38;
+    font-size: 1rem;
 }
