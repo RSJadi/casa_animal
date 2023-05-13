@@ -8,57 +8,58 @@ body {
 header {
     background-color: #D9D9D9;
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
     padding: 0.625rem;
     padding-left: 2rem;
     height: 7.5rem;
     width: auto;
+    display: flex;
+    justify-content: space-between;
 } 
 
-header img {
-    max-width: 100%;
+header span a img {
+    width: 100%;
     max-height: 100%;
-    width: auto;
-    height: auto;
-    object-fit: contain;
+    vertical-align: middle;
     padding-left: 0rem;  
     border-radius: 10%;
-    margin: 0%;
 }
 
-header img:hover {
+header span a img:hover {
     display: flex;
     scale: 1.1;
 }
 
-header ul {
+header nav {
     display: flex;
+    height: 100%;
     align-items: center;
-    text-decoration: none;
-    list-style-type: none;
-    margin-right: 25rem;
 }
 
-header ul li {
-    margin-left: 10rem;
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10rem; 
+    padding-right: 7rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #016B38;
     font-size: 1.75rem;
 }
 
-header ul li a {
-    text-decoration: none;
-    color: #016B38;
-}
-
-header ul li:hover {
+header nav ul li:hover {
     scale: 1.2;
     font-weight: bold;
-    cursor: url(./assets/pata-cachorro-cursor.cur), default;
+    cursor: url(./assets/pata-cachorro-cursor.cur), pointer;
 }
 
 main {
     width: auto;
-    height: 62rem;
+    height: 65rem;
     margin-bottom: 2.5rem;
 }
 
@@ -78,7 +79,7 @@ main {
     float: left; 
     font-family: 'Inter', sans-serif;
     -webkit-text-stroke: 0.031rem #016B38;
-    font-size: 100%;
+    font-size: 110%;
     font-weight: bold;   
     text-align: center;
     line-height: 3.5rem;
@@ -86,7 +87,6 @@ main {
     background-color:#D9D9D9;
     border-radius: 10%;
 }
-
 
 .Adotar {
     float: right;
@@ -111,57 +111,61 @@ main {
     box-shadow: 0px 0px 43px 7px rgba(66, 68, 90, 1);
 }
 
+.Por_que_adotar img:hover {
+    display: flex;
+    scale: 1.3;
+    border-radius: 25%;
+}
+
 .Textos_adotar {
     height: 23rem;
     width: 70.75;
-    padding-left: 2rem;
+    padding-left: 5rem;
     padding-right: 1rem;
+    background-color: rgb(184, 141, 121, 0.5);
 }
 
 .Titulo_adotar {
-    text-align: center;
+    text-align: left;
     align-content: center;
     letter-spacing: 0.188rem;
-
 }
 
 .Titulo_adotar h2 {
     color: #D9D9D9;
     font-weight: bold;
-    font-size: 200%;
+    font-size: 250%;
     -webkit-text-stroke: 0.031rem #D9D9D9;
     letter-spacing: 0.3rem;
 }
 
 .Justif_adotar1 {
-    text-align: left;
+    text-align: justify;
     align-content: center;
     line-height: 200%;   
-    letter-spacing: 0.125rem;
-    padding-right: 0.625rem;
+    letter-spacing: 0.1rem;
+    padding-right: 12rem;
     color: #016B38;
 }
 
 .Justif_adotar1 h3 {
-
     font-weight: bold;
-    font-size: 150%;
+    font-size: 180%;
 }
 
 .Justif_adotar2 {
     text-align: right;
     align-content: center;   
-    padding-left: 4.375rem;
+    padding-left: 15rem;
     padding-right: 0.313rem;
     line-height: 200%;   
-    letter-spacing: 0.125rem;
+    letter-spacing: 0.1rem;
     color: #016B38;
 }
 
 .Justif_adotar2 h3 {
-
     font-weight: bold;
-    font-size: 150%;
+    font-size: 180%;
 }
 
 .Parceiras {
@@ -174,14 +178,10 @@ main {
     clear: both;
 }
 
-.Parceiras_title {
-
-}
-
 .Parceiras_title h3 {
     color: #016B38;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: center;
     letter-spacing: 0.125rem;
 }
@@ -204,6 +204,11 @@ main {
     box-shadow: 0px 0px 37px -2px rgba(66, 68, 90, 1);
 }
 
+.Parceiras_images img:hover {
+    display: flex;
+    scale: 1.1;
+}
+
 .Parceiras_texts {
     flex-direction: row;
     justify-content: space-around;
@@ -213,6 +218,7 @@ main {
     gap: 0.625rem;   
     letter-spacing: 0.125rem;
     margin-top: 3rem;
+    background-color: rgb(184, 141, 121, 0.5);
 }
 
 
@@ -226,6 +232,12 @@ main {
     font-weight: bold;
     font-size: 1rem;
     color:#D9D9D9;
+}
+
+.Parceiras a:hover {
+    scale: 1.2;
+    font-weight: bold;
+    cursor: url(./assets/pata-cachorro-cursor.cur), pointer;
 }
 
 .Dicas {
@@ -268,6 +280,11 @@ main {
     box-shadow: 0px 0px 37px -2px rgba(66, 68, 90, 1);
 }
 
+.Dicas_images img:hover {
+    display: flex;
+    scale: 1.05;
+}
+
 .Dicas_texts {
     flex-direction: row;
     justify-content: space-around;
@@ -276,6 +293,7 @@ main {
     gap: 0.625rem;   
     letter-spacing: 0.125rem;
     padding-top: 0rem;
+    background-color: rgb(184, 141, 121, 0.5);
 }
 
 
@@ -291,12 +309,17 @@ main {
     color:#016B38;
 }
 
+.Dicas a:hover {
+    scale: 1.2;
+    font-weight: bold;
+    cursor: url(./assets/pata-cachorro-cursor.cur), pointer;
+}
+
 footer {
     background-color: #D9D9D9;    
     padding: 0.3rem;
     height: 13.5rem;
     width: auto;
-    
 }
 
 footer img {
@@ -327,6 +350,7 @@ footer h2 {
 footer h4 {
     text-align: right;
     align-content: center;
+    font-family: 'Inter', sans-serif;
     padding-right: 2rem;
     letter-spacing: 0.188rem;
     -webkit-text-stroke: 0.031rem #016B38;
