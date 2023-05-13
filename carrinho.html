@@ -5,42 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="carrinho.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Irish+Grover&display=swap" rel="stylesheet">
     <title>Casa Animal - Meu Carrinho</title>
 </head>
-<body>
-    <header>
-        <img src="./assets/logo_atual.png" alt="Logo da Casa Animal" width="100px" height="100px">
-        <nav>
-            <ul>
-                <li>
-                    <a href="">
-                        Produtos
+<body class="background">
+    <header class="navegation">
+        <a href="pagina_home">
+            <img class="logo" src="./assets/logo_atual.png" alt="Logo da Casa Animal">
+        </a>
+        <nav class="sections_nav">
+            <ul class="itens">
+                <li class="item">
+                    <a class="option_nav" href="produtos.html">
+                        Produtos🎁
                     </a>
                 </li>
-                <li>
-                    <a href="">
-                        Adote!
+                <li class="item">
+                    <a class="option_nav" href="adote.html">
+                        Adote!🐶
                     </a>
                 </li>
-                <li>
-                    <a href="">
-                        Login
+                <li class="item">
+                    <a class="option_nav" href="#">
+                        Login 📲
                     </a>
                 </li>
-                <li>
-                    <a href="">
-                        Meu Carrinho
+                <li class="item">
+                    <a class="option_nav" href="carrinho.html">
+                        Meu Carrinho🧺
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h2>Por enquanto, seu carrinho está vazio. Comece a fazer suas compras!</h2>
-        <button type="submit">Ver Produtos</button>
+    <main class="container">
+        <div class="shopping">
+            <div class="product">
+                <img src="#" alt="produto 1">
+                <p>Pequena descrição do produto 1</p>
+                <p>Preço: R$ 10,00</p>
+                <div class="qtd">
+                    <button class="qtd_remove">
+                        ➖
+                    </button>
+                    <input type="text" class="qtd_input" value="0" min="0">
+                    <button class="qtd_add">
+                        ➕
+                    </button>
+                </div>
+                <hr class="line">
+            </div>
+            <div class="total">
+                <h4>Total: <span> R$ 0,00 </span></h4>
+                <button class="end">Finalizar compra</button>
+            </div>
+        </div>
+        <div class="data">
+            <h4> Formas de Pagamento</h4>
+            <ul>
+                <li class="payment">
+                    <img class="forma" src="./assets/qrcodeficticio.png" alt="Pix" > 
+                </li>
+                <li class="payment">
+                    <img class="forma" src="./assets/cartaoC.jpg" alt="Cartão de Crédito">
+                </li>
+                <li class="payment">
+                    <img class="forma" src="./assets/cartaoD.jpg" alt="Cartão de Débito">
+                </li>
+                <li class="payment">
+                    <img class="forma" src="./assets/boleto.jpg" alt="Boleto bancário">
+                </li>
+            </ul>
+        </div>
+        <div class="empty">
+            <h2>
+                Por enquanto, seu carrinho está vazio. Comece a fazer suas compras!
+            </h2>
+            <button class="btn" type="submit">
+                Ver Produtos
+            </button>
+        </div>
+        
     </main>
-    <footer>
-        <p>Todos os direitos reservados </p>
+    <footer class="footer">
+        <div>
+            <p class="social_medias">Siga-nos em nossas Redes Sociais:</p>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img class="logo_footer" src="./assets/logo_facebook_divertido.jpg" alt="Logotipo Facebook">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img class="logo_footer" src="./assets/logo_instagram_divertido.jpg" alt="Logotipo Instagram">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img class="logo_footer" src="./assets/logo_linkedin_divertido.jpg" alt="Logotipo Linkedin">
+            </a>
+        </div>
+        <p> Trabalho desenvolvido pelo Grupo 3, Turma 5. Todos os direitos reservados &copy; 2023 Casa Animal</p>
     </footer>
 </body>
 </html>
