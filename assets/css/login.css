@@ -1,39 +1,43 @@
 * {
-  background:#B88D79;
-  font-family: 'Irish Grover', cursive;
+  font-family: "Irish Grover", cursive;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+header {
+  background-color: #f4f4f4;
+  display: flex;
+  padding: 0 2rem;
+  height: 6rem;
+}
+
 .logo img {
-  position: absolute;
-  width: 175px;
-  height: 172px;
-  left: 112px;
-  top: 77px;
+  display: flex;
+  margin: 10px;
+  width: 5rem;
+  height: 5rem;
 }
 
 main {
+  background: #b88d79;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  width: 431px;
-  height: 485px;
-  left: 504px;
-  top: 130px;
+  justify-content: center;
+  height: 100vh;
 }
 
 main h1 {
-  font-family: 'Irish Grover';
+  font-family: "Irish Grover";
   font-style: normal;
-  font-weight: 300;
-  font-size: 48px;
-  line-height: 58px;
+  font-weight: 100;
+  font-size: 3rem;
+  line-height: 3.5rem;
   text-align: center;
   text-transform: capitalize;
-  color: #F4F4F4;
+  margin-top: 2%;
+  color: #f4f4f4;
   text-shadow: 0px 4px 4px rgba(62, 85, 62, 0.876);
 }
 
@@ -75,18 +79,19 @@ main .alternative span {
   margin-top: 5rem;
   font-size: 1.5rem;
   font-weight: 400;
-  color:  #F4F4F4;
+  color: #f4f4f4;
   position: relative;
 }
 
-main .alternative span::before, main .alternative span::after {
+main .alternative span::before,
+main .alternative span::after {
   position: absolute;
-  content: '';
+  content: "";
   height: 2px;
   width: 100px;
   bottom: 50%;
   right: 50px;
-  background:  #016B38;
+  background: #016b38;
 }
 
 main .alternative span::after {
@@ -105,17 +110,17 @@ main form label {
 }
 
 main form label span {
-  color: #F4F4F4;
+  color: #f4f4f4;
   font-size: 1.3rem;
   margin-top: 1rem;
 }
 
 main form input {
-  background: #F4F4F4;
+  background: #f4f4f4;
   height: 40px;
   width: 450px;
   font-size: 1rem;
-  border: 2px solid #016B38;
+  border: 2px solid #016b38;
   border-radius: 8px;
   box-shadow: 3px 3px 3px 2px rgba(38, 118, 48, 0.303);
 }
@@ -126,14 +131,14 @@ main form input[type="submit"] {
   margin-top: 1rem;
   border: none;
   background: #f4f4f4;
-  color: #016B38;
+  color: #016b38;
   font-size: 1.5rem;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 main form input[type="submit"]:hover {
-  background: #016B38;
-  color: #F4F4F4;
+  background: #016b38;
+  color: #f4f4f4;
 }
 
 .links {
@@ -141,19 +146,26 @@ main form input[type="submit"]:hover {
   justify-content: center;
   margin-top: 3rem;
   font-size: 1.3rem;
-  color: #F4F4F4;
+  color: #f4f4f4;
+  text-shadow: 0px 4px 4px rgba(62, 85, 62, 0.876);
 }
 
 a {
   text-decoration: none;
-  color: #016B38;
+  color: #016b38;
 }
 
 .footer {
+  background: #f4f4f4;
+  color: #016b38;
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
-  font-size: 1rem;
-  color: #F4F4F4;
 }
+
+.footer p {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
 

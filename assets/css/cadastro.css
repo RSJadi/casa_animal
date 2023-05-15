@@ -1,38 +1,42 @@
 * {
-  background:#B88D79;
   font-family: 'Irish Grover', cursive;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #f4f4f4;
+  display: flex;
+  padding: 0 2rem;
+  height: 6rem;
 }
 
 .logo img {
-  position: absolute;
-  width: 175px;
-  height: 172px;
-  left: 112px;
-  top: 77px;
+  display: flex;
+  margin: 10px;
+  width: 5rem;
+  height: 5rem;
 }
 
 main {
+  background: #b88d79;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  width: 431px;
-  height: 485px;
-  left: 504px;
-  top: 130px;
+  justify-content: center;
+  height: 100%;
 }
 
 main h1 {
-  font-family: 'Irish Grover', cursive;
+  font-family: "Irish Grover";
   font-style: normal;
-  font-weight: 300;
-  font-size: 48px;
-  line-height: 58px;
+  font-weight: 100;
+  font-size: 3rem;
   text-align: center;
   text-transform: capitalize;
-  color: #F4F4F4;
+  margin-top: 2%;
+  color: #f4f4f4;
   text-shadow: 0px 4px 4px rgba(62, 85, 62, 0.876);
 }
 
@@ -96,6 +100,7 @@ main form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 main form label {
@@ -136,9 +141,15 @@ main form input[type="submit"]:hover {
 }
 
 .footer {
+  background: #f4f4f4;
+  color: #016b38;
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
-  font-size: 1rem;
-  color: #F4F4F4;
 }
+
+.footer p {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
