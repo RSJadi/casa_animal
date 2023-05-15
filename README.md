@@ -14,7 +14,7 @@
 <br>
 
 <p align="center">
-  <img alt="projeto Habits" src="./assets/img/pag_login.png" width="100%">
+  <img alt="projeto Habits" src="./assets/img/pagina-login.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
