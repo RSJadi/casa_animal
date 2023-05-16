@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/fav.png" type="image/x-icon">
     <link rel="stylesheet" href="carrinho.css">
+    <script src="./carrinho.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Irish+Grover&display=swap" rel="stylesheet">
@@ -42,16 +43,16 @@
         </nav>
     </header>
     <main class="container">
-        <div class="shopping">
-            <div class="product">
+        <div class="shopping" id="prod">
+            <div class="product" >
                 <img src="#" alt="produto 1">
                 <p>Pequena descrição do produto 1</p>
-                <p>Preço: R$ 10,00</p>
+                <p>Preço: R$ 0,00</p>
                 <div class="qtd">
                     <button class="qtd_remove">
                         ➖
                     </button>
-                    <input type="text" class="qtd_input" value="0" min="0">
+                    <input type="text" class="qtd_input" value="1" min="0">
                     <button class="qtd_add">
                         ➕
                     </button>
@@ -59,7 +60,7 @@
                 <hr class="line">
             </div>
             <div class="total">
-                <h4>Total: <span> R$ 0,00 </span></h4>
+                <h4 class="price">Total: R$ <span id="value">0,00 </span></h4>
                 <button class="end">Finalizar compra</button>
             </div>
         </div>
@@ -80,9 +81,9 @@
                 </li>
             </ul>
         </div>
-        <div class="empty">
+        <div class="empty" id="vazio">
             <h2>
-                Por enquanto, seu carrinho está vazio. Comece a fazer suas compras!
+                Por enquanto, seu carrinho está vazio. Comece a fazer suas compras! 
             </h2>
             <button class="btn" type="submit">
                 Ver Produtos
