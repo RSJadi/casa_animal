@@ -21,22 +21,22 @@
             <ul class="itens">
                 <li class="item">
                     <a class="option_nav" href="produtos.html">
-                        Produtos🎁
+                        PRODUTOS🎁
                     </a>
                 </li>
                 <li class="item">
                     <a class="option_nav" href="adote.html">
-                        Adote!🐶
+                        ADOTE!🐶
                     </a>
                 </li>
                 <li class="item">
                     <a class="option_nav" href="#">
-                        Login 📲
+                        LOGIN/CADASTRO📲
                     </a>
                 </li>
                 <li class="item">
                     <a class="option_nav" href="carrinho.html">
-                        Meu Carrinho🧺
+                        MEU CARRINHO🧺
                     </a>
                 </li>
             </ul>
@@ -60,7 +60,7 @@
                 <hr class="line">
             </div>
             <div class="total">
-                <h4 class="price">Total: R$ <span id="value">0,00 </span></h4>
+                <h4 class="price">Total: R$ <span id="value"> 0,00 </span></h4>
                 <button class="end">Finalizar compra</button>
             </div>
         </div>
@@ -81,11 +81,19 @@
                 </li>
             </ul>
         </div>
-        <div class="empty" id="vazio">
+        <div id="telaPagamento" style="display: none;">
+            <h2>Opções de Pagamento</h2>
+            <input class="opcaoPagamento" type="radio" name="opcaoPagamento" value="cartao"> Pix<br>
+            <input class="opcaoPagamento" type="radio" name="opcaoPagamento" value="boleto"> Cartão de Crédito<br>
+            <input class="opcaoPagamento" type="radio" name="opcaoPagamento" value="cartao"> Cartão de Débito<br>
+            <input class="opcaoPagamento" type="radio" name="opcaoPagamento" value="boleto"> Boleto Bancário<br>
+            <button id="confirmarPagamento" class="btn">Confirmar</button>
+          </div>
+        <div class="empty" id="vazio" style="display: none;">
             <h2>
                 Por enquanto, seu carrinho está vazio. Comece a fazer suas compras! 
             </h2>
-            <button class="btn" type="submit">
+            <button class="btn" id="see-prod" type="submit">
                 Ver Produtos
             </button>
         </div>
@@ -93,18 +101,23 @@
     </main>
     <footer class="footer">
         <div>
-            <p class="social_medias">Siga-nos em nossas Redes Sociais:</p>
-            <a href="https://www.facebook.com/" target="_blank">
-                <img class="logo_footer" src="./assets/logo_facebook_divertido.jpg" alt="Logotipo Facebook">
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img class="logo_footer" src="./assets/logo_instagram_divertido.jpg" alt="Logotipo Instagram">
-            </a>
-            <a href="https://www.linkedin.com/" target="_blank">
-                <img class="logo_footer" src="./assets/logo_linkedin_divertido.jpg" alt="Logotipo Linkedin">
-            </a>
+            <h2 class="social_medias">Siga-nos em nossas Redes Sociais:</h2>
+            <div class="img-footer">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img class="logo_footer" src="./assets/logo_facebook_divertido.jpg" alt="Logotipo Facebook">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img class="logo_footer" src="./assets/logo_instagram_divertido.jpg" alt="Logotipo Instagram">
+                </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img class="logo_footer" src="./assets/logo_twitter_divertido2.png" alt="Logo Twitter">
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img class="logo_footer" src="./assets/logo_linkedin_divertido.jpg" alt="Logotipo Linkedin">
+                </a>
+            </div>
         </div>
-        <p> Trabalho desenvolvido pelo Grupo 3, Turma 5. Todos os direitos reservados &copy; 2023 Casa Animal</p>
+        <h4 class="footer-h4">Copyright&copy; 2023 Casa Animal <br> Todos os direitos reservados</h4>
     </footer>
 </body>
 </html>
