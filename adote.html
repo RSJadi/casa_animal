@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Irish+Grover&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="./script_adote.js" defer></script>
     <title>Adote!</title>
 </head>
 <body>
@@ -19,9 +20,6 @@
         </span>
         <nav>
             <ul>
-                <li>
-                    <a href="">HOME</a>
-                </li>
                 <li>
                     <a href="">PRODUTOS</a>
                 </li>
@@ -41,11 +39,24 @@
         <h1 class="Main_title">POR QUE ADOTAR?</h1>
         <section class="Novo_amigo">
             <form action="">
-                <h3>
-                    <label for="cep">Onde seu novo amigo lhe encontrará? Informe aqui seu CEP e mostraremos as entidades parceiras mais pertinho de você!</label>
-                    <input type="text" name="cep" id="cep">
-                </h3>
+                <h2>Onde seu novo amigo lhe encontrará? Mostraremos as entidades parceiras mais pertinho de você!</h2>
+                <label for="cep_adotar">Informe seu CEP:</label>
+                <input type="text" maxlength="8" id="cep_adotar" name="cep_adotar">
+                <div class="cep_msg">
+                    <p id = "cep_helper_adote" class="cep_helper_adote_ajuda"></p>
+                    <button class="validacao" type="submit">clique aqui!</button>
+
+                </div>
             </form>
+            <button onclick="abrirPopup()">Mostrar ONGs</button>
+            <div id="popup" class="popup">
+                <div class="conteudo-popup">
+                  <h2>Entidade(s) mais próxima(s) do CEP informado:</h2>
+                  <div class="ongs">
+                  </div>
+                  <button onclick="fecharPopup()">Fechar</button>
+                </div>
+              </div>
         </section>
         <section class="Adotar">
                 <div class="Por_que_adotar">
@@ -122,16 +133,22 @@
         <h2>Siga-nos em nossas Redes Sociais:</h2>
         <div class="Foot_images">
             <a href="https://www.facebook.com/" target="_blank">
-                <img src="./assets/logo_facebook_divertido.jpg" alt="Logotipo Facebook">
+                <img src="./assets/logo_facebook_divertido.png" alt="Logotipo Facebook">
             </a>
             <a href="https://www.instagram.com/" target="_blank">
-                <img src="./assets/logo_instagram_divertido.jpg" alt="Logotipo Instagram">
+                <img src="./assets/logo_instagram_divertido.png" alt="Logotipo Instagram">
             </a>
+             </a href="https://www.twitter.com/" target="_blank">
+                <img src="./assets/logo_twitter_divertido2.png" alt="Logotipo Twitter">
+            </a>   
             <a href="https://www.linkedin.com/" target="_blank">
-                <img src="./assets/logo_linkedin_divertido.jpg" alt="Logotipo Linkedin">
+                <img src="./assets/logo_linkedin_divertido.png" alt="Logotipo Linkedin">
             </a>
         </div>
-        <h4>Trabalho desenvolvido pelo Grupo 3, Turma 5. Todos os direitos reservados.</h4>
+        <div class="texto_final">
+            <h4>Copyright© 2023 Casa Animal</h4>
+            <h4>Todos os direitos reservados</h4>   
+        </div>  
     </footer>
 </body>
 </html>
