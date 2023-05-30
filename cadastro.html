@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/cadastro.css" />
+    <script src="./assets/js/cadastro.js" defer></script>
     <title>Novo Cadastro</title>
   </head>
   <body>
@@ -41,25 +42,21 @@
         <span>OU</span>
       </div>
       <form action="">
-        <label for="username">
-          <span>Nome Completo</span>
-          <input type="text" name="username" id="username" />
-        </label>
-        <br />
-        <label for="email">
-          <span>E-mail</span>
-          <input type="email" name="email" id="email" />
-        </label>
-        <br />
-        <label for="password">
-          <span>Senha</span>
-          <input type="password" name="password" id="password" />
-        </label>
-        <br />
-        <label for="password">
-          <span>Confirme Sua Senha</span>
-          <input type="password" name="password" id="password" />
-        </label>
+        <label for="username">Nome Completo</label>
+        <input type="text" id="username" name="username" />
+        <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" />
+        <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" />
+        <p id="senha-helper" class="helper-text">Mensagem de ajuda</p>
+
+        <label for="confirma-senha">Confirmar Senha</label>
+        <input type="password" id="confirma-senha" name="confirma-senha" />
+        <p id="confirma-senha-helper" class="helper-text">Mensagem de ajuda</p>
         <br />
         <input type="submit" value="Cadastrar" id="button" />
       </form>
