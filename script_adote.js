@@ -1,28 +1,3 @@
-//function formatarCEP(input) {
-    // Remove todos os caracteres não numéricos
-    //let cep = input.value.replace(/\D/g, '');
-
-
-   // let cep = input.value;
-    // Verifica se o CEP possui 8 dígitos
-  // if (cep.length === 8) {
-       //Formata o CEP no formato "xxxxx-xxx"
-    // cep = cep.substring(0, 5) + '-' + cep.substring(5, 8);
-   // }
-  
-    // Define o valor formatado no campo de entrada
-   //input.value = cep;
-  //}
-  
-
-   //<form action="">
- // <label for="cep_adotar">Onde seu novo amigo lhe encontrará? Informe aqui seu CEP e mostraremos as entidades parceiras mais pertinho de você!</label>
- // <input type="text" maxlength="8" pattern="[0-9]{8}" id="cep_adotar" name="cep_adotar" oninput="formatarCEP(this)">
-  //<p id = "cep_helper_adote" class="cep_helper_adote_ajuda"></p>
-//</form>
-
-//value = value.substring(0, 5) + '-' + value.substring(5, 8)
-
   // ---------- FUNÇÕES GERAIS -------------- //
 function togglePopup(input, label) {
     // Mostrar popup de campo obrigatório
@@ -88,7 +63,7 @@ function togglePopup(input, label) {
   cepAdotarInput.addEventListener("change", (e)=> {
     let valor = e.target.value;
     
-    if(valor.match(/^\d+$/) && valor.length === 8){
+    if (valor.includes('@') && valor.includes('.com')){
       // Adicionar estilos dinâmicos se o valor estiver correto
       cepAdotarHelper.classList.remove("visible");
       cepAdotarInput.classList.remove("error");
@@ -98,7 +73,7 @@ function togglePopup(input, label) {
       // Adicionar estilos dinâmicos se o valor estiver incorreto
       cepAdotarInput.classList.remove("correct");
       cepAdotarInput.classList.add("error");
-      cepAdotarHelper.innerText = "Digite apenas os oito caracteres numéricos!";
+      cepAdotarHelper.innerText = "Digite seu e-mail corretamente!";
       cepAdotarHelper.classList.add("visible");
       inputsCorretos.cep_adotar = false
     }
@@ -125,10 +100,10 @@ function togglePopup(input, label) {
 
 // ---------- EVITAR ENVIO DO FORMULARIO - 2 ---------- //
 
-let btnSubmit = document.querySelector('button[type="submit"]')
+let btnSubmit = document.querySelector(".validacao1");
 let inputsCorretos = {
-    cep_adotar: false
-}
+  cep_adotar: false
+};
 
 function abrirPopup() {
   let popup = document.getElementById("popup");
@@ -147,7 +122,7 @@ function fecharPopup() {
 //}
 
 
-btnSubmit.addEventListener("click", (e)=>{
+/*btnSubmit.addEventListener("click", (e)=>{
   if(inputsCorretos.cep_adotar == false){
     e.preventDefault()
     alert("Para encontrar seu novo amigo, preencha o campo de CEP corretamente!")
@@ -156,8 +131,19 @@ btnSubmit.addEventListener("click", (e)=>{
     abrirPopup()
     fecharPopup()
   }
-} )
+} )*/
 
+
+
+//versão que funciona:
+btnSubmit.addEventListener("click", (e)=>{
+  if(inputsCorretos.cep_adotar == false){
+    e.preventDefault()
+    alert("Para encontrar seu novo amigo, preencha o campo de e-mail corretamente!")
+  } else {
+    alert("O e-mail foi enviado com sucesso! Verifique sua caixa postal, siga as instruções e entre em contato com a ONG mais próxima de você!")
+  }
+} )
 
 // -------- ELEMENTOS DAS ONGS ---------- //
 const arrayOngs = [
@@ -168,8 +154,8 @@ const arrayOngs = [
     estado: "SP",
     cep: "09540-030",
     site: "http://projetobichosdogueto.blogspot.com/p/o-projeto.html",
-    instagram: "url",
-    facebook: "url"
+    instagram: "https://www.instagram.com/bichosdogueto/?igshid=NTc4MTIwNjQ2YQ==",
+    facebook: ""
   },
 
   {
@@ -178,19 +164,19 @@ const arrayOngs = [
     cidade: "Rio de Janeiro",      
     estado: "RJ",
     cep: "07421-030",
-    site: "url",
-    instagram: "url",
-    facebook: "url"  
+    site: "https://www.onggarra.com/",
+    instagram: "https://www.instagram.com/garranimal/?igshid=NTc4MTIwNjQ2YQ%3D%3D",
+    facebook: ""
   },
   {
     entidade: "CLUBE DO GATO",
-    endereco: "Rua Amélia Jobim, 188",
+    endereco: "Rua Nossa Senhora dos Guararapes, 188",
     cidade: "Brasília",  
     estado: "DF",
     cep: "09540-030",
-    site: "url",
-    instagram: "url",
-    facebook: "url"    
+    site: "https://clubedogato.org.br/",
+    instagram: "https://www.instagram.com/clubedogatobrasil/?igshid=NTc4MTIwNjQ2YQ%3D%3D",
+    facebook: ""
   },
 ]
 
@@ -213,49 +199,3 @@ for (let i=0; i<arrayOngs.length; i++) {
   ongs.appendChild(article)
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//<label for="username">*Username:</label>
-//<input type="text" id="username" name="username">
-//<p id="username-helper" class="helper-text">Mensagem de ajuda</p>
-
-
-
-// ---------- VALIDAÇÃO USERNAME ---------- //
-//let usernameInput = document.getElementById("username");
-//let usernameLabel = document.querySelector('label[for="username"]');
-//let usernameHelper = document.getElementById("username-helper");
-
-//togglePopup(usernameInput, usernameLabel)
-
-// Validar valor do input
-//usernameInput.addEventListener("change", (e)=> {
-  //let valor = e.target.value
-
- // if(valor.length < 3){
-    // Adicionar estilos dinâmicos se o valor tiver menos de 3 caracteres
-   // usernameHelper.innerText = "Seu username precisa ter 3 ou mais caracteres";
-  //  estilizarInputIncorreto(usernameInput, usernameHelper);
-  //  inputsCorretos.username = false
- // } else {
-  //  // Adicionar estilos dinâmicos se o valor estiver correto
- //   estilizarInputCorreto(usernameInput, usernameHelper);
- //   inputsCorretos.username = true
-//  }
-//})

@@ -21,16 +21,16 @@
         <nav>
             <ul>
                 <li>
-                    <a href="">PRODUTOS</a>
+                    <a class="effect" href="produtos.html">PRODUTOS🎁</a>
                 </li>
                 <li>
-                    <a href="">ADOTE!</a>
+                    <a class="effect" href="adote.html">ADOTE!🐶</a>
                 </li>
                 <li>
-                    <a href="">LOGIN/CADASTRO</a>
+                    <a class="effect" href="">LOGIN/CADASTRO📲</a>
                 </li>
                 <li>
-                    <a href="">MEU CARRINHO</a>
+                    <a class="effect" href="carrinho.html">MEU CARRINHO🧺</a>
                 </li>
             </ul>
         </nav>
@@ -39,24 +39,28 @@
         <h1 class="Main_title">POR QUE ADOTAR?</h1>
         <section class="Novo_amigo">
             <form action="">
-                <h2>Onde seu novo amigo lhe encontrará? Mostraremos as entidades parceiras mais pertinho de você!</h2>
-                <label for="cep_adotar">Informe seu CEP:</label>
-                <input type="text" maxlength="8" id="cep_adotar" name="cep_adotar">
+                <h2>Onde seu novo amigo lhe encontrará? Enviaremos por e-mail as entidades parceiras mais pertinho de você!</h2>
+                <div class="cep_valid">
+                    <label for="cep_adotar">Digite seu e-mail:</label>
+                    <input type="text" id="cep_adotar" name="cep_adotar">
+                    <button class="validacao1" type="submit"></button>
+                </div>
                 <div class="cep_msg">
                     <p id = "cep_helper_adote" class="cep_helper_adote_ajuda"></p>
-                    <button class="validacao" type="submit">clique aqui!</button>
-
                 </div>
             </form>
-            <button onclick="abrirPopup()">Mostrar ONGs</button>
-            <div id="popup" class="popup">
-                <div class="conteudo-popup">
-                  <h2>Entidade(s) mais próxima(s) do CEP informado:</h2>
-                  <div class="ongs">
-                  </div>
-                  <button onclick="fecharPopup()">Fechar</button>
+            <div class="cep_msg2">
+                <h2 class="parc">Ou clique no ossinho:</h2>
+                <button class="validacao2" onclick="abrirPopup()">Mostrar ONGs</button>
+                <div id="popup" class="popup">
+                    <div class="conteudo-popup">
+                      <h2>Entidades parceiras onde você pode encontrar seu novo amigo:</h2>
+                      <div class="ongs">
+                      </div>
+                      <button class="validacao3" onclick="fecharPopup()">Fechar</button>
+                    </div>
                 </div>
-              </div>
+            </div>
         </section>
         <section class="Adotar">
                 <div class="Por_que_adotar">
@@ -84,7 +88,7 @@
                 <a href="http://projetobichosdogueto.blogspot.com/p/o-projeto.html" target="_blank">
                     <img src="./assets/Cachorro-01-Adoção-Bichos-do-Gueto.jpeg" alt="Cachorro Bichos do Gueto">
                 </a>
-                <a href="https://www.onggarra.com/?gclid=Cj0KCQjw27mhBhC9ARIsAIFsETE0BUx8E1MDyN8AkhacX0KyT_wR1BThaIQ_J2xWnxIgC0FiNcEEZAoaApoYEALw_wcB" target="_blank">
+                <a href="https://www.onggarra.com/" target="_blank">
                     <img src="./assets/Cachorro-02-Adoção-ONG_Garra.jpg" alt="Cachorro ONG Garra">
                 </a>
                 <a href="https://clubedogato.org.br/" target="_blank">
@@ -95,7 +99,7 @@
                 <a href="http://projetobichosdogueto.blogspot.com/p/o-projeto.html" target="_blank">
                     <h3 class="Parceiras_txt">Fêmea, castrada, vermifugada, 2 anos, "Projeto Bichos do Gueto" <br> Mairiporã/SP</h3>
                 </a>
-                <a href="https://www.onggarra.com/?gclid=Cj0KCQjw27mhBhC9ARIsAIFsETE0BUx8E1MDyN8AkhacX0KyT_wR1BThaIQ_J2xWnxIgC0FiNcEEZAoaApoYEALw_wcB" target="_blank">
+                <a href="https://www.onggarra.com/" target="_blank">
                     <h3 class="Parceiras_txt">Macho, castrado, vermifugado, 5 anos, "ONG Garra" <br> Rio de Janeiro/RJ</h3>
                 </a>
                 <a href="https://clubedogato.org.br/" target="_blank">
