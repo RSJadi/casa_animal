@@ -44,10 +44,10 @@
     </header>
     <main class="container">
         <div class="shopping" id="prod">
-            <div class="product" >
+            <div class="product">
                 <img src="#" alt="produto 1">
                 <p>Pequena descrição do produto 1</p>
-                <p>Preço: R$ 0,00</p>
+                <p>Preço: R$ <span class="prodprice" data-preco="10.00"> 10.00 </span> </p>
                 <div class="qtd">
                     <button class="qtd_remove">
                         ➖
@@ -60,7 +60,7 @@
                 <hr class="line">
             </div>
             <div class="total">
-                <h4 class="price">Total: R$ <span id="value"> 0,00 </span></h4>
+                <h4 class="price">Total: R$ <span id="value"> 10.00 </span></h4>
                 <button class="end">Finalizar compra</button>
             </div>
         </div>
@@ -68,7 +68,7 @@
             <h4> Formas de Pagamento</h4>
             <ul>
                 <li class="payment">
-                    <img class="forma" src="./assets/qrcodeficticio.png" alt="Pix" > 
+                    <img class="forma" src="./assets/qrcodeficticio.png" alt="Pix">
                 </li>
                 <li class="payment">
                     <img class="forma" src="./assets/cartaoC.jpg" alt="Cartão de Crédito">
@@ -81,23 +81,23 @@
                 </li>
             </ul>
         </div>
-        <div id="telaPagamento" style="display: none;">
+        <div id="telaPagamento" name="telaPagamento" style="display: none;">
             <h2>Opções de Pagamento</h2>
             <input class="opcaoPagamento" type="radio" name="opcaoPagamento" value="cartao"> Pix<br>
             <input class="opcaoPagamento" type="radio" name="opcaoPagamento" value="boleto"> Cartão de Crédito<br>
             <input class="opcaoPagamento" type="radio" name="opcaoPagamento" value="cartao"> Cartão de Débito<br>
             <input class="opcaoPagamento" type="radio" name="opcaoPagamento" value="boleto"> Boleto Bancário<br>
             <button id="confirmarPagamento" class="btn">Confirmar</button>
-          </div>
+        </div>
         <div class="empty" id="vazio" style="display: none;">
             <h2>
-                Por enquanto, seu carrinho está vazio. Comece a fazer suas compras! 
+                Por enquanto, seu carrinho está vazio. Comece a fazer suas compras!
             </h2>
             <button class="btn" id="see-prod" type="submit">
                 Ver Produtos
             </button>
         </div>
-        
+
     </main>
     <footer class="footer">
         <div>
@@ -120,4 +120,5 @@
         <h4 class="footer-h4">Copyright&copy; 2023 Casa Animal <br> Todos os direitos reservados</h4>
     </footer>
 </body>
+
 </html>

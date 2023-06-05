@@ -54,7 +54,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items:flex-end;
-    width: 90%;
+    width: 80%;
     padding: 0 1rem;
 }
 
@@ -215,6 +215,16 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
+    gap: 2rem;
+}
+
+@media only screen and (max-width: 770px){
+    .option_nav{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        font-size: 1rem
+    }
 
 }
 
@@ -245,14 +255,14 @@ body {
     }
 
     .item {
-        font-size: 0.8rem;
+        font-size: 0.5rem;
     }
 
     .option_nav{
         display: block;
         text-align: center;
         padding: 10px;
-        font-size: 1rem
+        font-size: 0.7rem
     }
 
     .btn {
@@ -284,14 +294,19 @@ body {
 
     .footer{
         margin-top: 10%;
-        padding: 1rem;
+        padding: 0.2rem;
         color: #016B38;
 
+    }
+
+    .footer-h4 {
+        font-size: 0.5rem;
     }
 
     .img-footer{
         display: flex;
         justify-content: center;
+        gap: 1rem;
     }
 
     .logo_footer{
