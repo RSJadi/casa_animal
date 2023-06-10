@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="carrinho.css">
+    <script src="./carrinho.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Irish+Grover&display=swap" rel="stylesheet">
+    <title>Casa Animal - Meu Carrinho</title>
+</head>
+<body class="background">
+    <header class="navegation">
+        <a href="pagina_home">
+            <img class="logo" src="./assets/logo_atual.png" alt="Logo da Casa Animal">
+        </a>
+        <nav class="sections_nav">
+            <ul class="itens">
+                <li class="item">
+                    <a class="option_nav" href="produtos.html">
+                        PRODUTOS🎁
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="option_nav" href="adote.html">
+                        ADOTE!🐶
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="option_nav" href="#">
+                        LOGIN/CADASTRO📲
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="option_nav" href="carrinho.html">
+                        MEU CARRINHO🧺
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="shopping" id="prod">
+            <div class="product">
+                <img src="#" alt="produto 1">
+                <p>Pequena descrição do produto 1</p>
+                <p>Preço: R$ <span class="prodprice" data-preco="10.00"> 10.00 </span> </p>
+                <div class="qtd">
+                    <button class="qtd_remove">
+                        ➖
+                    </button>
+                    <input type="text" class="qtd_input" value="1" min="0">
+                    <button class="qtd_add">
+                        ➕
+                    </button>
+                </div>
+                <hr class="line">
+            </div>
+            <div class="total">
+                <h4 class="price">Total: R$ <span id="value"> 10.00 </span></h4>
+                <button class="end">Finalizar compra</button>
+            </div>
+        </div>
+        <div class="data">
+            <h4> Formas de Pagamento</h4>
+            <ul>
+                <li class="payment">
+                    <img class="forma" src="./assets/qrcodeficticio.png" alt="Pix">
+                </li>
+                <li class="payment">
+                    <img class="forma" src="./assets/cartaoC.jpg" alt="Cartão de Crédito">
+                </li>
+                <li class="payment">
+                    <img class="forma" src="./assets/cartaoD.jpg" alt="Cartão de Débito">
+                </li>
+                <li class="payment">
+                    <img class="forma" src="./assets/boleto.jpg" alt="Boleto bancário">
+                </li>
+            </ul>
+        </div>
+        <div id="telaPagamento" name="telaPagamento" style="display: none;">
+            <h2>Opções de Pagamento</h2>
+            <input class="opcaoPagamento" type="radio" name="opcaoPagamento" value="cartao"> Pix<br>
+            <input class="opcaoPagamento" type="radio" name="opcaoPagamento" value="boleto"> Cartão de Crédito<br>
+            <input class="opcaoPagamento" type="radio" name="opcaoPagamento" value="cartao"> Cartão de Débito<br>
+            <input class="opcaoPagamento" type="radio" name="opcaoPagamento" value="boleto"> Boleto Bancário<br>
+            <button id="confirmarPagamento" class="btn">Confirmar</button>
+        </div>
+        <div class="empty" id="vazio" style="display: none;">
+            <h2>
+                Por enquanto, seu carrinho está vazio. Comece a fazer suas compras!
+            </h2>
+            <button class="btn" id="see-prod" type="submit">
+                Ver Produtos
+            </button>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div>
+            <h2 class="social_medias">Siga-nos em nossas Redes Sociais:</h2>
+            <div class="img-footer">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img class="logo_footer" src="./assets/logo_facebook_divertido.png" alt="Logotipo Facebook">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img class="logo_footer" src="./assets/logo_instagram_divertido.png" alt="Logotipo Instagram">
+                </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img class="logo_footer" src="./assets/logo_twitter_divertido2.png" alt="Logo Twitter">
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img class="logo_footer" src="./assets/logo_linkedin_divertido.png" alt="Logotipo Linkedin">
+                </a>
+            </div>
+        </div>
+        <h4 class="footer-h4">Copyright&copy; 2023 Casa Animal <br> Todos os direitos reservados</h4>
+    </footer>
+</body>
+
+</html>
