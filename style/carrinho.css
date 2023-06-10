@@ -13,7 +13,7 @@ body {
 
 .background {
     background-color: #B88D79;
-    background-image: url(./assets/fundo.png);
+    background-image: url(/assets/fundo.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
