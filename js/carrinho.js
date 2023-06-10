@@ -83,7 +83,7 @@ confirmarPagamento.addEventListener("click", function (event) {
       if (opcoesPagamento[i].checked) {
         opcaoSelecionada = true;
         alert("Seu pedido foi realizado com sucesso✅ Dê uma olhadinha no seu email(Veja também o span)");
-        window.location.href = "carrinho.html"
+        window.location.href = "index.html"
         break;
       }
     }
