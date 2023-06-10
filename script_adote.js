@@ -24,34 +24,6 @@ function togglePopup(input, label) {
   }
 
 
-
-  // ---------- VALIDAÇÃO USERNAME ---------- //
-//let cepAdotarInput = document.getElementById("cep_adotar");
-//let cepAdotarLabel = document.querySelector('label[for="cep_adotar"]');
-//let cepAdotarHelper = document.getElementById("cep_helper_adote");
-
-//togglePopup(cepAdotarInput, cepAdotarLabel)
-
-// Validar valor do input
-//cepAdotarInput.addEventListener("blur", (e)=> {
- // let valor = e.target.value;
-
-
- // if(valor.match(/^\d+$/) && valor.length === 8){
-    // Adicionar estilos dinâmicos se o valor estiver correto
- //   estilizarInputCorreto(cepAdotarInput, cepAdotarHelper);
- //   inputsCorretos.cep_adotar = true
-//  } else {
-    // Adicionar estilos dinâmicos se o valor estiver incorreto
- //   cepAdotarHelper.innerText = "Digite apenas oito caracteres numéricos!";
-  //  estilizarInputIncorreto(cepAdotarInput, cepAdotarHelper);
- //   inputsCorretos.cep_adotar = false
-//  }
-//})
-
-
-
-
   // ---------- VALIDAÇÃO USERNAME VERSÃO FULL ---------- //
   let cepAdotarInput = document.getElementById("cep_adotar");
   let cepAdotarLabel = document.querySelector('label[for="cep_adotar"]');
@@ -80,24 +52,6 @@ function togglePopup(input, label) {
   })
 
 
-
-// ---------- EVITAR ENVIO DO FORMULARIO ---------- //
-
-//let btnSubmit = document.querySelector('button[type="submit"]')
-//let inputsCorretos = {
-    //cep_adotar: false
-//}
-
-  //btnSubmit.addEventListener("click", (e)=>{
-   // if(inputsCorretos.cep_adotar == false){
-   //   e.preventDefault()
-   //   alert("Para encontrar seu novo amigo, preencha o campo de CEP corretamente!")
-   // }else{
-   //   alert("O formulário foi enviado com sucesso!")
-   // }
- // } )
-
-
 // ---------- EVITAR ENVIO DO FORMULARIO - 2 ---------- //
 
 let btnSubmit = document.querySelector(".validacao1");
@@ -115,27 +69,6 @@ function fecharPopup() {
   popup.style.display = "none";
 }
 
-//function validar() {
-  // Lógica de validação aqui
-  //let btnValidacao = document.getElementById("btnValidacao");
-  //btnValidacao.click();
-//}
-
-
-/*btnSubmit.addEventListener("click", (e)=>{
-  if(inputsCorretos.cep_adotar == false){
-    e.preventDefault()
-    alert("Para encontrar seu novo amigo, preencha o campo de CEP corretamente!")
-  } else {
-    //validar()
-    abrirPopup()
-    fecharPopup()
-  }
-} )*/
-
-
-
-//versão que funciona:
 btnSubmit.addEventListener("click", (e)=>{
   if(inputsCorretos.cep_adotar == false){
     e.preventDefault()
