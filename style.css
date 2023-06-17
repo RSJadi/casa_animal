@@ -1,13 +1,13 @@
 body {
     font-family: 'Irish Grover', cursive;
     color: #016B38;
-    background-color: #B88D79;   
+    background-color: rgb(184, 141, 121);   
     background-image: url(./assets/fundo_Adote.png);
     margin: 0;
 }
 
 header {
-    background-color: #D9D9D9;
+    background-color: rgb(217, 217, 217);
     display: flex;
     flex-direction: row;
     padding: 0.625rem;
@@ -68,14 +68,14 @@ main {
     margin-bottom: 2.5rem;
 }
 
-@media (max-width: 1440px ) {
+/*@media (max-width: 1440px ) {
     main {
         display: flex;    
         flex-direction: column;
         align-self: center;
         align-items: center;
     }
-}
+}*/
 
 .Main_title {
     text-align: center;
@@ -87,7 +87,7 @@ main {
     margin-bottom: 2.345rem;
 }
 
-@media (max-width: 1440px ) {
+/*@media (max-width: 1440px ) {
     .Main_title {
         font-size: 2.8rem;  
     }
@@ -103,7 +103,7 @@ main {
     .Main_title {
         font-size: 1rem;  
     }
-}
+}*/
 
 .Novo_amigo {
     margin: 1.25rem;
@@ -120,7 +120,7 @@ main {
     box-shadow: 0px 0px 16px 11px rgba(1, 107, 56, 1);
 }
 
-@media (max-width: 1440px ) {
+/*@media (max-width: 1440px ) {
     .Novo_amigo {
         margin: 1rem;
         padding: .3rem;
@@ -152,20 +152,20 @@ main {
     .Novo_amigo {
         margin-bottom: 1.6rem;
     }
-}
+}*/
 
 .Novo_amigo h2 {
     margin-bottom: 0;
     margin-top: .25rem;
     font-family: 'Inter', sans-serif;
-    -webkit-text-stroke: 0.031rem #016B38;
+    -webkit-text-stroke: 0.031rem rgb(1, 107, 56);
     font-size: 1.4rem;
     font-weight: bold;   
     text-align: center;
     line-height: 3rem;
 }
 
-@media (max-width: 1440px ) {
+/*@media (max-width: 1440px ) {
     .Novo_amigo h2{
         font-size: 1.2rem;  
         line-height: 2.9rem;
@@ -191,7 +191,7 @@ main {
         font-size: .8rem;  
         line-height: 1.8rem;  
     }
-}
+}*/
 
 .cep_valid {
     display: flex;    
@@ -212,7 +212,7 @@ label {
     padding-left: 0rem;
 }
 
-@media (max-width: 1440px ) {
+/*@media (max-width: 1440px ) {
     label {
         font-size: 1rem;  
         line-height: 2.4rem;
@@ -238,7 +238,7 @@ label {
         font-size: .4rem;  
         line-height: .6rem;  
     }
-}
+}*/
 
 input {
     font-family: 'Inter', sans-serif;
@@ -249,7 +249,7 @@ input {
     font-size: 1rem;
 }
 
-@media (max-width: 1440px ) {
+/*@media (max-width: 1440px ) {
     input {
         font-size: 1rem;  
         height: 1rem;
@@ -279,7 +279,7 @@ input {
         height: .6rem;  
         width: 3rem;
     }
-}
+}*/
 
 .cep_msg {
     display: flex;    
@@ -332,7 +332,7 @@ input {
     margin-bottom: 3rem;
 }
 
-@media (max-width: 1801px ) {
+/*@media (max-width: 1801px ) {
     .Adotar {
         height: 22rem;
         width: 80%;   
@@ -376,7 +376,7 @@ input {
         margin-bottom: 4rem;
         margin-left: 3rem;
     }
-}
+}*/
 
 .Por_que_adotar {
     margin: 0.625rem;
@@ -386,12 +386,12 @@ input {
     float: right;
 }
 
-@media (max-width: 580px ) {
+/*@media (max-width: 580px ) {
     .Por_que_adotar {
         margin: 0.4rem;
         padding: 0.2rem;
     }
-}
+}*/
 
 .Por_que_adotar img{
     width: 25rem;
@@ -407,7 +407,7 @@ input {
     border-radius: 18%;
 }*/
 
-@media (max-width: 580px ) {
+/*@media (max-width: 580px ) {
     .Por_que_adotar img:hover {
         display: flex;
         scale: 1.05;
@@ -511,7 +511,7 @@ input {
         width: 9.5rem;
         height: auto;
     }
-}
+}*/
 
 .Textos_adotar {
     width: 70.75;
@@ -521,7 +521,7 @@ input {
     background-color: rgb(184, 141, 121, 0.5);
 }
 
-@media (max-width: 1801px ) {
+/*@media (max-width: 1801px ) {
     .Textos_adotar {
         width: 60rem;
         height: auto;
@@ -655,7 +655,7 @@ input {
         padding-left: .8rem;
         padding-right: .2rem;  
     }
-}
+}*/
 
 .Titulo_adotar {
     text-align: left;
@@ -665,7 +665,7 @@ input {
     margin-top: 2.075rem;
 }
 
-@media (max-width: 1440px ) {
+/*@media (max-width: 1440px ) {
     .Titulo_adotar {
         margin-bottom: 0rem;
         margin-top: 0rem;
@@ -713,7 +713,7 @@ input {
         margin-bottom: .4rem;
         margin-top: 0rem;
     }
-}
+}*/
 
 .Titulo_adotar h2 {
     color: #D9D9D9;
@@ -723,7 +723,7 @@ input {
     letter-spacing: 0.3rem;
 }
 
-@media (max-width: 1440px ) {
+/*@media (max-width: 1440px ) {
     .Titulo_adotar h2 {
         font-size: 200%;  
     }
@@ -772,7 +772,7 @@ input {
     .Titulo_adotar h2 {
         font-size: 70%;  
     }
-}
+}*/
 
 .Justif_adotar1 {
     text-align: justify;
@@ -784,7 +784,7 @@ input {
     margin-bottom: 1.8rem;
 }
 
-@media (max-width: 1801px ) {
+/*@media (max-width: 1801px ) {
     .Justif_adotar1 {
         line-height: 160%;  
         margin-top: 1.5rem;
@@ -852,7 +852,7 @@ input {
         margin-top: .8rem;
         margin-bottom: .5rem;
     }
-}
+}*/
 
 .Justif_adotar1 h3 {
     font-weight: bold;
@@ -863,7 +863,7 @@ input {
     color: #016B38;
 }
 
-@media (max-width: 1801px ) {
+/*@media (max-width: 1801px ) {
     .Justif_adotar1 h3 {
         font-size: 160%;  
         padding-right: 4rem;
@@ -909,7 +909,7 @@ input {
     .Justif_adotar1 h3 {
         font-size: 60%;  
     }
-}
+}*/
 
 .Justif_adotar2 {
     text-align: right;
@@ -921,7 +921,7 @@ input {
     color: #016B38;
 }
 
-@media (max-width: 1801px ) {
+/*@media (max-width: 1801px ) {
     .Justif_adotar2 {
         line-height: 146%;  
         padding-left: 11rem;
@@ -995,14 +995,14 @@ input {
         line-height: 50%;  
         padding-left: 0rem;
     }
-}
+}*/
 
 .Justif_adotar2 h3 {
     font-weight: bold;
     font-size: 180%;
 }
 
-@media (max-width: 1801px ) {
+/*@media (max-width: 1801px ) {
     .Justif_adotar2 h3 {
         font-size: 160%;  
     }
@@ -1042,7 +1042,7 @@ input {
     .Justif_adotar2 h3 {
         font-size: 60%;  
     }
-}
+}*/
 
 .Parceiras {
     margin: 1rem;
@@ -1314,7 +1314,7 @@ input.correct {
     cursor: pointer; 
   }
 
-@media (max-width: 1440px ) {
+/*@media (max-width: 1440px ) {
     .validacao2 {
         font-size: .8rem;
         width: 6.4rem;
@@ -1344,7 +1344,7 @@ input.correct {
         width: 3.5rem;
         height: 2rem;
     }
-}
+}*/
 
 
 .popup {
