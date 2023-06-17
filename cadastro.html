@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/cadastro.css" />
+    <script src="./assets/js/cadastro.js" defer></script>
+    <title>Novo Cadastro</title>
+  </head>
+  <body>
+    <div class="logo">
+      <header>
+        <a href="./index.html">
+          <img src="./assets/img/logo.png" alt="Logo Da Casa Animal" />
+        </a>
+      </header>
+    </div>
+    <main>
+      <h1>Novo Cadastro</h1>
+      <div class="social-media">
+        <a
+          href="https://www.google.com/intl/pt-BR/account/about/"
+          target="_blank"
+        >
+          <img src="./assets/img/google.png" alt="Logo do Google" />
+        </a>
+        <a href="https://pt-br.facebook.com" target="_blank">
+          <img src="./assets/img/facebook.png" alt="Logo do Facebook" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="./assets/img/instagram.png" alt="Logo do Instagram" />
+        </a>
+      </div>
+      <div class="alternative">
+        <span>OU</span>
+      </div>
+      <form action="">
+        <label for="username">Nome Completo</label>
+        <input type="text" id="username" name="username" />
+        <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" />
+        <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" />
+        <p id="senha-helper" class="helper-text">Mensagem de ajuda</p>
+
+        <label for="confirma-senha">Confirmar Senha</label>
+        <input type="password" id="confirma-senha" name="confirma-senha" />
+        <p id="confirma-senha-helper" class="helper-text">Mensagem de ajuda</p>
+        <br />
+        <input type="submit" value="Cadastrar" id="button" />
+      </form>
+    </main>
+    <div class="footer">
+      <footer>
+        <p>
+          Copyright©️ 2023 Casa Animal. <br />
+          Todos Os Direitos Reservados
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

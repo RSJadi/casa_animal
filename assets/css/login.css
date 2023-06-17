@@ -1,0 +1,220 @@
+* {
+  font-family: "Irish Grover", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #f4f4f4;
+  display: flex;
+  padding: 0 2rem;
+  height: 6rem;
+}
+
+.logo img {
+  display: flex;
+  margin: 10px;
+  width: 5rem;
+  height: 5rem;
+}
+
+main {
+  background: #b88d79;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main h1 {
+  font-family: "Irish Grover";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 2%;
+  color: #f4f4f4;
+  text-shadow: 0px 4px 4px rgba(62, 85, 62, 0.876);
+}
+
+main .social-media {
+  display: flex;
+  align-content: center;
+  margin-top: 2rem;
+}
+
+main .social-media a {
+  text-decoration: none;
+}
+
+main .social-media img {
+  width: 36px;
+  margin-left: 3rem;
+}
+
+main .social-media img:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+
+main .social-media a:first-child img {
+  margin-left: 0;
+}
+
+main .alternative {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+main .alternative span {
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #f4f4f4;
+  position: relative;
+}
+
+main .alternative span::before,
+main .alternative span::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100px;
+  bottom: 50%;
+  right: 50px;
+  background: #016b38;
+}
+
+main .alternative span::after {
+  left: 50px;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+}
+
+main form label {
+  display: flex;
+  flex-direction: column;
+}
+
+main form label span {
+  color: #f4f4f4;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+main form input {
+  background: #f4f4f4;
+  height: 40px;
+  width: 450px;
+  font-size: 1rem;
+  border: 2px solid #016b38;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px 2px rgba(38, 118, 48, 0.303);
+}
+
+main form input[type="submit"] {
+  align-self: center;
+  cursor: pointer;
+  width: 50%;
+  margin-top: 1rem;
+  border: none;
+  background: #f4f4f4;
+  color: #016b38;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+main form input[type="submit"]:hover {
+  background: #016b38;
+  color: #f4f4f4;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  font-size: 1.3rem;
+  color: #f4f4f4;
+  text-shadow: 0px 4px 4px rgba(62, 85, 62, 0.876);
+}
+
+a {
+  text-decoration: none;
+  color: #016b38;
+}
+
+.footer {
+  background: #f4f4f4;
+  color: #016b38;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.footer p {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-family: "Inter", sans-serif;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  position: relative;
+  color: #f4f4f4;
+  font-size: 1.2rem;
+}
+
+label:not(:first-of-type) {
+  margin-top: 1rem;
+}
+
+.helper-text {
+  display: none;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  color: rgb(224, 6, 6);
+}
+
+/* ---------- Estilos dinâmicos ---------- */
+.required-popup::after {
+  content: "*Campo obrigatório";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #016b38;
+  font-size: 1rem;
+  padding: 0.2rem 0.3rem;
+  width: auto;
+  display: block;
+  background-color: #e29332;
+  border-radius: 0.7rem;
+}
+
+input.error {
+  border: solid 2px #d80909;
+  background-color: #c88888;
+  color: #d72424;
+}
+
+input.correct {
+  background-color: #a8eea8;
+  border: solid 2px #016b38;
+  color: #000000;
+}
+
+.visible {
+  display: block;
+}

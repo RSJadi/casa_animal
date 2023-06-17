@@ -1,0 +1,162 @@
+* {
+  font-family: "Irish Grover", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #f4f4f4;
+  display: flex;
+  padding: 0 2rem;
+  height: 6rem;
+}
+
+.logo img {
+  display: flex;
+  margin: 10px;
+  width: 5rem;
+  height: 5rem;
+}
+
+main {
+  background: #b88d79;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main h3 {
+  font-family: "Irish Grover", cursive;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 58px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #f4f4f4;
+  text-shadow: 0px 4px 4px rgba(62, 85, 62, 0.876);
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+}
+
+main form label span {
+  color: #f4f4f4;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #f4f4f4;
+  font-size: 1.2rem;
+}
+
+main form input {
+  align-self:center;
+  background: #f4f4f4;
+  height: 40px;
+  width: 450px;
+  font-size: 1rem;
+  border: 2px solid #016b38;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px 2px rgba(38, 118, 48, 0.303);
+}
+
+p {
+  text-shadow: 0px 4px 4px rgba(62, 85, 62, 0.876);
+}
+
+main form input[type="submit"] {
+  cursor: pointer;
+  width: 50%;
+  margin-top: 1rem;
+  border: none;
+  background: #f4f4f4;
+  color: #016b38;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+main form input[type="submit"]:hover {
+  background: #016b38;
+  color: #f4f4f4;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+
+.footer {
+  background: #f4f4f4;
+  color: #016b38;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.footer p {
+  color: #016b38;
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-family: 'Inter', sans-serif;
+  text-shadow: none;
+}
+
+label {
+  margin-bottom: 0.2rem;
+  position: relative;
+}
+
+label:not(:first-of-type) {
+  margin-top: 1rem;
+}
+
+.helper-text {
+  display: none;
+  font-size: 1.1rem;
+  font-family: "Inter", sans-serif;
+  color: rgb(224, 6, 6);
+  text-shadow: none;
+}
+
+/* ---------- Estilos dinâmicos ---------- */
+.required-popup::after {
+  content: "*Campo obrigatório";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #016b38;
+  font-size: 1rem;
+  padding: 0.2rem 0.3rem;
+  width: auto;
+  display: block;
+  background-color: #e29332;
+  border-radius: 0.7rem;
+}
+
+input.error {
+  border: solid 2px #d80909;
+  background-color: #c88888;
+  color: #d72424;
+}
+
+input.correct {
+  background-color: #a8eea8;
+  border: solid 2px #016b38;
+  color: #000000;
+}
+
+.visible {
+  display: block;
+}
+
