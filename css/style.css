@@ -2,7 +2,7 @@ body {
     font-family: 'Irish Grover', cursive;
     color: #016B38;
     background-color: rgb(184, 141, 121);   
-    background-image: url(./assets/fundo_Adote.png);
+    background-image: url(../assets/fundo_Adote.png);
     margin: 0;
 }
 
@@ -55,7 +55,7 @@ header nav ul li a {
 header nav ul li:hover {
     scale: 1.2;
     font-weight: bold;
-    cursor: url(./assets/pata-cachorro-cursor.cur), pointer;
+    cursor: url(../assets/pata-cachorro-cursor.cur), pointer;
 }
 
 /*.effect:hover {
