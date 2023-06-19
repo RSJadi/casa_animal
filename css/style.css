@@ -1118,7 +1118,7 @@ input {
     font-weight: bold;
     transform: scale(1.2);
     transition: transform 0.5s;
-    cursor: url(./assets/pata-cachorro-cursor.cur), pointer;
+    cursor: url(../assets/pata-cachorro-cursor.cur), pointer;
 }
 
 .Dicas {
@@ -1363,7 +1363,7 @@ input.correct {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #B88D79;
-    background-image: url(./assets/fundo_Adote.png);
+    background-image: url(../assets/fundo_Adote.png);
     padding: 20px;
     width: 1500px;
     max-width: 90%;
