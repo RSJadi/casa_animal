@@ -1278,7 +1278,7 @@ input.correct {
 .validacao1 {
     width: 2rem;
     height: 2rem;
-    background-image: url(./assets/button_valid.png);
+    background-image: url(../assets/button_valid.png);
     background-size: cover; 
     background-color: #D9D9D9;
     color: #D9D9D9;
@@ -1291,7 +1291,7 @@ input.correct {
 .validacao2 {
     width: 8rem; 
     height: 4.4rem; 
-    background-image: url(./assets/osso_verde.png);
+    background-image: url(../assets/osso_verde.png);
     background-size: cover;
     background-color: #D9D9D9;
     color: #D9D9D9;
@@ -1304,7 +1304,7 @@ input.correct {
   .validacao3 {
     width: 6.4rem; 
     height: 3.6rem; 
-    background-image: url(./assets/osso_verde.png);
+    background-image: url(../assets/osso_verde.png);
     background-size: cover; 
     background-color: #B88D79;
     color: #D9D9D9;
