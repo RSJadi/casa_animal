@@ -82,7 +82,7 @@ confirmarPagamento.addEventListener("click", function (event) {
     for (let i = 0; i < opcoesPagamento.length; i++) {
       if (opcoesPagamento[i].checked) {
         opcaoSelecionada = true;
-        alert("Seu pedido foi realizado com sucesso✅ Dê uma olhadinha no seu email(Veja também o span)");
+        alert("Seu pedido foi realizado com sucesso✅ Dê uma olhadinha no seu email(Veja também o spam)");
         window.location.href = "index.html"
         break;
       }
