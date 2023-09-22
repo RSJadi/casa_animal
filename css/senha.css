@@ -17,6 +17,7 @@ header {
   margin: 10px;
   width: 5rem;
   height: 5rem;
+  border-radius: 15%;
 }
 
 main {
